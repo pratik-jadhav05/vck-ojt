@@ -3,14 +3,14 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import Contactpage from "./pages/ContactPage";
 import CoursesPage from "./pages/CoursesPage";
-import "./styles/pages.css";
+import "./styles/Pages.css";
 import "./App.css";
 import AdmissionPages from "./pages/AdmissionPage";
 import ChatbotComponent from "./components/Chatbot/ChatbotComponents";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
-import DeveloperInfoPopup from "./components/Developerinfo/DeveloperinfoPopup";
+import DeveloperInfoPopup from "./components/DeveloperInfo/DeveloperInfoPopup";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(true);
