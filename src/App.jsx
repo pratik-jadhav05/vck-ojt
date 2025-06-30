@@ -10,7 +10,7 @@ import ChatbotComponent from "./components/Chatbot/ChatbotComponents";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
-import DeveloperinfoPopup from "./components/Developerinfo/DeveloperinfoPopup";
+import DeveloperPopup from "./components/Developer/DeveloperPopup";
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(true);
@@ -21,7 +21,7 @@ const App = () => {
       <>
       <div>
         {/* Your main application content */}
-        <DeveloperinfoPopup
+        <DeveloperPopup
           show={showPopup}
           onClose={handleClosePopup}
           studentName="Pratik Suresh Jadhav"

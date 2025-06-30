@@ -1,6 +1,6 @@
 // Example structure for a React component (conceptual)
-import './DeveloperInfoPopup.css'
-function DeveloperinfoPopup({ show, onClose, studentName, studentPhotoUrl, uniqueMessage }) {
+import './DeveloperPopup.css'
+function DeveloperPopup({ show, onClose, studentName, studentPhotoUrl, uniqueMessage }) {
   if (!show) {
     return null; 
   }
@@ -17,4 +17,4 @@ function DeveloperinfoPopup({ show, onClose, studentName, studentPhotoUrl, uniqu
     </div>
   );
 }
-export default DeveloperinfoPopup;
+export default DeveloperPopup;
