@@ -1,10 +1,8 @@
 .main-header {
   background-color: #007BFF;
   color: white;
-  margin-top: -22px;
   padding: 15px 20px;
   display: flex;
-  width: 1495px;
   height: 38px;
   justify-content: space-between;
   align-items: center;
