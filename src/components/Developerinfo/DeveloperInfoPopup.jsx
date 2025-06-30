@@ -1,8 +1,8 @@
 // Example structure for a React component (conceptual)
 import './DeveloperInfoPopup.css'
-function DeveloperInfoPopup({ show, onClose, studentName, studentPhotoUrl, uniqueMessage }) {
+function DeveloperinfoPopup({ show, onClose, studentName, studentPhotoUrl, uniqueMessage }) {
   if (!show) {
-    return null; // Don't render if not visible
+    return null; 
   }
   return (
     <div className="popup-overlay"> {/* Covers the whole screen, usually semi-transparent */}
@@ -17,4 +17,4 @@ function DeveloperInfoPopup({ show, onClose, studentName, studentPhotoUrl, uniqu
     </div>
   );
 }
-export default DeveloperInfoPopup;
+export default DeveloperinfoPopup;
