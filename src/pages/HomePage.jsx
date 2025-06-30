@@ -1,59 +1,67 @@
-import Header from "../components/Header/Header";
-const HomePage =() => {
-    return(
-        <div className="container">
-            <Header/>
-              <h1 className="h1tag">University Data Dashboard</h1>
-        <h3>Section One: Overview of Current Academic Year</h3>
-       <p>  This Dashboard provide a snapshot of key eductional matrics for the current Academic term. data is 
-          updated perodically to reflect recent change in erollment,cource avaibility. and student performnce
-       </p>
-        <p>
-          for truly dynamic,"real-time" data.
-        </p>
-    <hr></hr>
-    <h3>Section Two: Key Matrics and Annoucements</h3>
-    <p> Here are some important figures and recent Annoucements for the university.</p>
-    <ul type="disc">
-    	<li>Current Active Courses: <b>485</b></li>
-	    <li>Total Registered Student: <b>8,921</b></li>
-	    <li>Facility Members: <b>310</b></li>
-	    <li>New Erollment This Week: <b>47</b></li>
-	  </ul>
-  <p>Please note that these numbers are inactive and reflact the latest avaibility</p>
-  <hr></hr>
-  <h3>Section Three: Live Erollment Count by Department </h3>
-    <p>Please note that these numbers are inactive and reflact the latest avaibility</p>
-     <center>
-      <table border="3" bordercolor="black">
-		<thead>
-			<tr>
-				<th scope="col">Flower</th>
-				<th scope="col">Colour</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td scope="row">Lilly</td>
-				<td scope="row">blue</td>
-			</tr>
-			<tr>
-				<td scope="row">Merigold</td>
-				<td scope="row">yellow</td>
-			</tr>
-      <tr>
-				<td scope="row">Lilly</td>
-				<td scope="row">blue</td>
-			</tr>
-      <tr>
-				<td scope="row">Merigold</td>
-				<td scope="row">yellow</td>
-			</tr>
-		</tbody>
-    </table>
-    </center>
-</div>
-    )
-}
+import { Link } from "react-router-dom";
+
+const HomePage = () => {
+  return (
+  <div className="page-container" style={{ overflow: "auto" }}>
+    <title>VCK</title>
+      
+      <div className="hero-section" >
+        <img src="/Images/college-banner.png" alt="Vivekanand College Campus" className="hero-banner-image"/>
+        <div className="hero-overlay-text">
+          <h1>Welcome to Vivekanand College!</h1>
+          <p>Your journey to excellence starts here.</p>
+          <Link to="/admissions" className="btn hero-btn">
+            Apply Now!
+          </Link>{" "}
+        </div>
+      </div>
+      <p>
+        <b>Vivekanand College</b> is a premier educational institution dedicated
+        to fostering academic excellence, innovation, and holistic development.
+        Established in 1980, we have proudly served generations of students,
+        empowering them to achieve their full potential.
+      </p>
+      <p>
+        At Vivekanand College, we believe in a vibrant learning environment that
+        extends beyond textbooks. Our state-of-the-art facilities, experienced
+        faculty, and diverse student community create a unique ecosystem where
+        curiosity thrives and future leaders are shaped.
+      </p>
+      <h2>Why Choose Vivekanand College?</h2>
+      <ul>
+        <li>
+          <b>Legacy of Excellence:</b> Decades of commitment to quality
+          education.
+        </li>
+        <li>
+          <b>Experienced Faculty:</b> Learn from renowned experts and passionate
+          educators.
+        </li>
+        <li>
+          <b>Modern Facilities:</b> Well-equipped labs, expansive library, and
+          comfortable campus.
+        </li>
+        <li>
+          <b>Holistic Development:</b> Focus on co-curricular activities,
+          sports, and community service.
+        </li>
+        <li>
+          <b>Strong Placements:</b> Excellent career opportunities with leading
+          companies.
+        </li>
+      </ul>
+      <h2>Campus Life & Facilities</h2>
+      <div className="image-gallery">
+        <img src="/Images/students-studying.jpeg" alt="Students of library" />
+        <img src="/Images/campus-life.jpg" alt="campus ground" />
+      </div>
+        <p> Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth. </p>
+      <div className="call-to-action">
+          <p>Ready to explore our courses?</p>
+        <Link to="/course" className="btn">Explore Courses</Link>{" "}
+      </div>  
+  </div>
+  );
+};
 
 export default HomePage;
